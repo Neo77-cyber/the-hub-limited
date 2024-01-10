@@ -2385,6 +2385,15 @@ section{
     /* color: #ed3337; */
 }
 
+.about-us .philosophy .philosophy-box{
+    display: grid;
+    height: max-content;
+    padding: 18px;
+    box-shadow: 0 0 80px 0 #00000091, inset 0 0 50px 0 #481b1b98 ;
+    border-radius: 14px;
+    margin-top: 10px;
+}
+
 /* responsiveness about us ..... */
 @media only screen and (max-width: 600px) {
     
