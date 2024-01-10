@@ -1465,6 +1465,8 @@ section{
     border-radius: 7px;
 }
 
+
+
 .reach-out .reach-out-parent .reach-out-icons span img{
     width: 50px;
     height: 50px;
@@ -1800,6 +1802,7 @@ section{
 }
 
 
+
 .faq-section .faq-groups p:hover::before{
     left: -5px;
     transform: rotateZ(0);
@@ -1817,6 +1820,12 @@ section{
     position: relative;
     z-index: 10;
 }
+
+
+.active-cat {
+    background: #0a1b25 !important;
+}
+
 
 .faq-section .faq-question {
     padding: 20px 0;
@@ -2766,6 +2775,7 @@ section{
 
 
 .solutions-page .child-1{
+    position: relative;
     display: grid;
     width: 100%;
     height: 60vh;
@@ -2776,6 +2786,38 @@ section{
     
 }
 
+.solutions-page .child-1::after{
+    position: absolute;
+    content: "";
+    background: #0000005c;
+    width: 100%;
+    height: 100%;
+}
+
+.solutions-page .sol1{
+    background-image: url("../img/order-fullfilment.jpg") !important;
+
+}
+
+.solutions-page .sol2{
+    background-image: url("../img/6355b46b13cedacfcea5d3b2_ship.png") !important;
+
+}
+
+.solutions-page .sol3{
+    background-image: url("../img/flexible-storage.jpg") !important;
+
+}
+
+.solutions-page .sol4{
+    background-image: url("../img/consolidate.jpeg") !important;
+    background-size: 100% 120vh;
+}
+
+.solutions-page .sol5{
+    background-image: url("../img/consult.jpg") !important;
+
+}
 
 
 .solutions-page .child-1 .sol-text{
@@ -2789,12 +2831,15 @@ section{
     padding: 40px;
     left: 150px;
     top: 90px;
+    z-index: 1;
 }
+
 
 .solutions-page .child-1 .sol-text h1,
 .solutions-page .child-1 .sol-text h2{
     color: #ed3337;
 }
+
 
 .solutions-page .child-1 .sol-text-link{
     display: grid;

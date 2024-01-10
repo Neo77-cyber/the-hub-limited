@@ -183,7 +183,7 @@ if (window.location.href.split("/")[3] === "home.html") {
 
     for (let i = 0; i < faq_qstn.length; i++) {
         faq_qstn[i].addEventListener("click", function(){
-            
+
             if ( faq_qstn[i].children[0].checked === false ) {
                 console.log(faq_qstn[i].children[3])
                 faq_qstn[i].children[3].classList.add("panel-checked");
@@ -202,10 +202,9 @@ if (window.location.href.split("/")[3] === "home.html") {
     function check(inpVar) {
         inpVar.checked = true;
     }
-    
+
     function uncheck(inpVar) {
         inpVar.checked = false;
-    } 
-
+    }
 }
 
