@@ -1583,6 +1583,7 @@ section{
     height: max-content;
     display: grid;
     align-items: center;
+    margin-bottom: 10px !important;
     
 }
 
@@ -2949,9 +2950,9 @@ section{
     margin-top: 10px;
 }
 
-.solutions-page .profile-text div ul li strong{
-    font-weight: 1500;
-    
+.solutions-page .profile-text div strong{
+    font-weight: 1000;
+    color: #ed3337;
 }
 
 /* ................. */
