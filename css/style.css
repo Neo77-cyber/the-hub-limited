@@ -2432,7 +2432,7 @@ section{
     display: grid;
     height: max-content;
     padding: 18px;
-    box-shadow: 0 0 80px 0 #00000091, inset 0 0 50px 0 #481b1b98 ;
+    box-shadow: 0 0 80px 0 #27272791, inset 0 0 50px 0 #481b1b98 ;
     border-radius: 14px;
     margin-top: 10px;
 }
@@ -2867,7 +2867,7 @@ section{
 .solutions-page .sol4{
     background-image: url("../img/happy-african-american-businessm.jpg") !important;
     /* background-size: 50% ; */
-    background-size: 100% 100vh;
+    background-size: 100% 80vh;
     
 }
 
