@@ -118,15 +118,31 @@ body{
     font-family: Raleway;
     font-weight: 500;
     height: max-content;
+    width: max-content;
     padding: 12px 16px;
     cursor: pointer;
 }
 
-.main_nav .logo img{
-    width: 70px !important;
-    height: 65px !important;
-    /* object-fit: cover !important; */
+.main_nav .logo{
+    grid-template-columns: 70px max-content;
+    align-items: center;
+    gap: 20px;
 }
+
+.main_nav .logo .logo-text{
+    font-size: 14px !important;
+    text-transform: capitalize;
+    padding-block: 8px;
+    padding-left: 15px;
+    border-left: 2.5px solid #000;
+}
+
+.main_nav .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 
 .main_nav .nav-links:hover {
     
@@ -317,15 +333,8 @@ body{
 
 }
 
-.main_nav .logo{
-    width: 70px;
-}
 
-.main_nav .logo img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+
 
 
 @media only screen and (max-width: 1350px) {
@@ -859,19 +868,35 @@ section{
     
 }
 
-.location-image .child-3 {
-
-    list-style-position: inside;
-    list-style-image: url(../img/check.png);
-    font-weight: 500;
-    
-}
-
 .location-image .child-2 img {
 
     object-fit: contain;
     
 }
+
+.location-image .child-3 {
+    display: grid;
+    list-style: none;
+    font-weight: 500;
+    
+}
+
+.location-image .child-3 li{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    height: max-content;
+    align-items: center;
+    gap: 8px;
+}
+
+.location-image .child-3 img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    background: none;
+}
+
+
 
 .location-image .child-4  {
     
@@ -2535,17 +2560,17 @@ section{
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 70vh;
+    height: max-content;
     width: 90vw;
     margin: auto;
-    margin-block: 60px;
+    padding: 130px 0 100px 0;
     gap: 50px;
 }
 
 .login-page .child-1 {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 100%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     overflow: hidden;

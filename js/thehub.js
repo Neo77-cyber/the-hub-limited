@@ -135,7 +135,6 @@ if (window.location.href.split("/")[3] === "home.html") {
 
             video_link.children[0].setAttribute("src", video_data)
 
-            
             video_card.style.transform = "translateY(0)";
 
         })
