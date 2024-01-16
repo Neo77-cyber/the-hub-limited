@@ -422,7 +422,7 @@ section{
 }
 
 .swiper-slide .slider-text h1{
-    font-size: 49px;
+    font-size: 40px;
     font-weight: 600;
 }
 
@@ -530,7 +530,7 @@ section{
     font-family: Raleway;
     font-weight: 700;
     color: #11101c;
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
     width: 100%;
     margin-bottom: 30px;
@@ -594,7 +594,7 @@ section{
     font-family: Raleway;
     font-weight: 800;
     color: #454458;
-    font-size: 21px;
+    font-size: 24px;
     text-align: center;
     letter-spacing: 0;
     line-height: normal;
@@ -611,7 +611,7 @@ section{
     font-family: Raleway;
     font-weight: 400;
     color: #7b7a8b;
-    font-size: 16px;
+    font-size: 17px;
     letter-spacing: 0;
     line-height: 23.2px;
     /* border: 1px solid red; */
@@ -825,7 +825,7 @@ section{
   }.location-image .child-1 h4 {
     border: 2px solid #ed3337;
     
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
     border-radius: 20px;
     color: #ed3337;
@@ -838,12 +838,12 @@ section{
 
 .location-image .child-1 h1 {
 
-    font-weight: 900;
+    font-weight: 600;
     color: #11101c;
-    font-size: 35px;
+    font-size: 24px;
     /* border: 1px solid green; */
     /* margin-bottom: 130px; */
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   
 }
 
@@ -851,7 +851,7 @@ section{
 
     margin-top: 10px;
     padding-left: 10px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 500;
     /* color: var(--heading-color); */
     line-height: 30px;
@@ -878,6 +878,7 @@ section{
     display: grid;
     list-style: none;
     font-weight: 500;
+    font-size: 17px;
     
 }
 
@@ -902,7 +903,7 @@ section{
     
     margin-top: 30px;
     background-color: rgba(237, 51, 55, 0.8);
-    width: 160px;
+    width: 140px;
     height: 60px;
     padding: 0 20px;
 
@@ -918,7 +919,7 @@ section{
 
 
 .location-image .child-4 a  {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     color: #ffffff;
     text-decoration: none;
@@ -927,26 +928,6 @@ section{
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -977,7 +958,7 @@ section{
     display: grid;
     grid-template-columns: max-content 1fr;
     width: 85%;
-    gap: 70px;
+    gap: 100px;
     height: max-content;
     margin-top: 40px;
     margin-bottom: 3px;
@@ -989,21 +970,21 @@ section{
     
     display: grid;
     grid-template-rows: auto auto;
-    gap: 0.5px;
+    /* gap: 0.5px; */
     /* border: 2px solid red; */
     
 }
 
 .our-service-card-header .child-1 h4 {
     border: 2px solid #ed3337;
-    margin: 30px 40px 0 ;
-    font-size: 16px;
+    margin: 70px 50px 0 ;
+    font-size: 24px;
     font-weight: 600;
-    line-height: 46px;
+    line-height: 43px;
     border-radius: 20px;
     color: #ed3337;
     padding: 0 25px;
-    width: 160px;
+    width: 120px;
     
 
 }
@@ -1067,7 +1048,7 @@ section{
 .our-country-services .service-cards .child-1{
     position: relative;
     display: grid;
-    grid-template-rows: max-content 16rem max-content max-content;
+    grid-template-rows: max-content ;
     justify-items: center;
     gap: 10px;
     background: rgba(8, 12, 36, 0.1);; 
@@ -1086,7 +1067,7 @@ section{
 .our-country-services .service-cards .child-2{
     position: relative;
     display: grid;
-    grid-template-rows: max-content 16rem max-content max-content;
+    grid-template-rows: max-content ;
     justify-items: center;
     gap: 10px;
     background: rgba(0, 133, 239, 0.1);
@@ -1105,7 +1086,7 @@ section{
 .our-country-services .service-cards .child-3{
     position: relative;
     display: grid;
-    grid-template-rows: max-content 16rem max-content max-content;
+    grid-template-rows: max-content ;
     justify-items: center;
     gap: 10px;
     background: rgba(250, 67, 24, 0.1); 
@@ -1433,12 +1414,13 @@ section{
     grid-template-rows: repeat(4, max-content);
     gap: 50px;
     margin-inline: 50px;
+    /* border: 2px solid black; */
 }
 
 .reach-out .reach-out-parent .child-2 h5{
     color: #FFF;
     font-family: Raleway;
-    font-size: 16px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px; /* 83.333% */
@@ -1450,7 +1432,7 @@ section{
 .reach-out .reach-out-parent .child-2 h2{
     color: #FFF;
     font-family: Raleway;
-    font-size: 20px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 600;
     letter-spacing: 1.3px;
@@ -1460,7 +1442,7 @@ section{
 .reach-out .reach-out-parent .child-2 p{
     color: #FFF;
     font-family: Raleway;
-    font-size: 16px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 500;
     line-height: 25px; /* 83.333% */
@@ -1489,13 +1471,22 @@ section{
     color: #FFF;
     text-align: center;
     font-family: Raleway;
-    font-size: 16px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 600;
     line-height: 43px; /* 252.941% */
     letter-spacing: 1.3px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     border-radius: 7px;
+    background: #ed3337;
+    transition: background .5s;
+    box-shadow: 0 0 80px 1px rgba(0, 0, 0, 0.577);
+}
+
+
+.reach-out .reach-out-parent .reach-out-icons span:hover{
+    background: #11101c;
+    cursor: default;
 }
 
 
@@ -1513,9 +1504,10 @@ section{
     /* background: #A9ADAF; */
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    padding: 50px;gap: 10px;
+    padding-left: 30px;gap: 10px;
     column-gap: 5px;
     border-radius: 7px;
+    /* border: 2px solid red; */
 }
 
 .reach-out .reach-out-parent .child-2 form div{
@@ -1532,7 +1524,7 @@ section{
 .reach-out .reach-out-parent .child-2 form div label{
     color: #FFF;
     font-family: Raleway;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px; /* 111.111% */
@@ -1581,7 +1573,7 @@ section{
     /* background: #D9D9D9; */
     outline: none;
     border: none;
-    height: 160px;
+    height: 140px;
     padding: 5px;
     grid-column: span 2;
     background: transparent;
@@ -1635,21 +1627,21 @@ section{
 .testimonials .testimonials-header h5{
     color: #11101c;
     font-family: Raleway;
-    font-size: 24px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 1.3px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     width: 100%;
     text-align: center;
 }
 
 .testimonials .testimonials-header h1{
     font-family: Raleway;
-    font-weight: 800;
+    font-weight: 600;
     color: #11101c;
-    font-size: 39px;
+    font-size: 30px;
     text-align: center;
     width: 100%;
     
@@ -1693,7 +1685,7 @@ section{
 
 .swiper-slide-testimonial {
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     background: #fff;
     display: flex;
     justify-content: center;
@@ -1719,7 +1711,7 @@ section{
 .swiper-slide-testimonial h1{
     color: #11101c;
     font-family: Raleway;
-    font-size: 18px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%; /* 30px */
@@ -1730,7 +1722,7 @@ section{
 .swiper-slide-testimonial p{
     color: #464558;
     font-family: Raleway;
-    font-size: 15px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: 145%; /* 23.2px */
@@ -1783,7 +1775,7 @@ section{
 }
 
 .faq-section .faq-header{
-    font-size: 42px;
+    font-size: 30px;
     padding: 24px;
     width: 100%;
     text-align: center;
@@ -1806,7 +1798,7 @@ section{
 .faq-section .faq-groups p{
     position: relative;
     display: grid;
-    font-size: 20px;
+    font-size: 17px;
     background: #ed3337;
     padding: auto;
     width: 160px;
@@ -1816,7 +1808,7 @@ section{
     font-weight: 600;
     line-height: 43px;
     letter-spacing: 1.3px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     border-radius: 7px;
     transition: background 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     
@@ -1875,7 +1867,7 @@ section{
 }
 
 .faq-section .panel-title {
-    font-size: 24px;
+    font-size: 20px;
     width: 100%;
     position: relative;
     margin: 0;
@@ -2029,7 +2021,7 @@ section{
 }
 
 .about-us .child-1 .about-us-title h1{
-    font-size: 40px;
+    font-size: 30px;
     font-family: Raleway;
     width: 100%;
     text-align: center;
@@ -2134,7 +2126,7 @@ section{
 .about-us .child-1 .flip-card-back .ceo-name{
     color: #000;
     font-family: Raleway;
-    font-size: 21px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 700;
 }
@@ -2293,7 +2285,7 @@ section{
 .about-us .child-2 .advantages p{
     width: max-content;
     text-align: left;
-    font-size: 25px;
+    font-size: 17px;
     letter-spacing: 2px;
 }
 
@@ -2302,7 +2294,7 @@ section{
     color: #000;
     text-align: center;
     font-family: Raleway;
-    font-size: 35px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     width: max-content;
@@ -2313,7 +2305,7 @@ section{
     justify-content: center;
     align-content: center;
     font-family: Raleway;
-    font-size: 20px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 400;
     border-radius: 25px;
@@ -2322,7 +2314,7 @@ section{
 }
 
 .about-us .child-2 .core-values{
-    gap: 10px;
+    gap: 20px;
 }
 
 .about-us .child-2 .core-values h1{
@@ -2334,25 +2326,25 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background: none;
-    gap: 10px;
+    gap: 20px;
 }
 
 .about-us .child-2 .core-values p span{
     position: relative;
     display: grid;
-    gap: 8px;
-    grid-template-columns: 1fr max-content;
-    font-size: 20px;
+    gap: 10px;
+    grid-template-columns: repeat(2, max-content);
+    font-size: 16px;
     background: #ed3337;
-    padding: 10px 60px;
-    width: 313px;
+    padding: 15px 20px;
+    width: 250px;
     color: #FFF;
     text-align: center;
     font-family: Raleway;
     font-weight: 600;
     line-height: 43px;
     letter-spacing: 1.3px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     border-radius: 7px;
     transition: background .5s;
     box-shadow: 0 0 80px 1px rgba(0, 0, 0, 0.577);
@@ -2396,7 +2388,7 @@ section{
     font-size: 20px;
     border-left: 7px solid #ed3337;
     height: 100%;
-    padding-left: 20px;
+    padding-left: 17px;
     display: grid;
     align-items: center;
 }
@@ -2406,7 +2398,7 @@ section{
     justify-content: center;
     align-content: center;
     font-family: Raleway;
-    font-size: 18px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 400;
     border-radius: 25px;
@@ -2421,7 +2413,7 @@ section{
 .about-us .philosophy ul{
     list-style-type: square;
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .about-us .philosophy ul li::marker{
@@ -2951,7 +2943,7 @@ section{
 }
 
 .solutions-page .profile-text h2{
-    font-size: 22px;
+    font-size: 17px;
     width: 100%;
     text-align: left;
     text-transform: uppercase;
