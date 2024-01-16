@@ -761,50 +761,6 @@ section{
   
 
 
-
-
-
-
-
-
-
-
-  /* .location-text h1 {
-    
-    font-weight: 300;
-    font-size: 2em;
-    font-family: Raleway;
-    color: #11101c;
-    
-  }
-
-  .location-text h4 {
-    
-    font-weight: 150;
-    font-size: 1em;
-    font-family: Raleway;
-    color: #11101c;
-    
-  }
-
-  .location-text h6 {
-    
-    font-weight: 150;
-    font-size: 1em;
-    font-family: Raleway;
-    color: #11101c;
-    
-  }
-
-  .location-text h6 span {
-    
-    font-weight: 150;
-    font-size: 1em;
-    font-family: Raleway;
-    color: #ed3337;
-    
-  } */
-
   .location-image {
 
     /* border: 2px solid black; */
@@ -863,8 +819,9 @@ section{
 .location-image .child-2 {
 
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: max-content max-content;
     /* border: 2px solid green; */
+    gap: 140px;
     
 }
 
@@ -878,10 +835,8 @@ section{
     display: grid;
     list-style: none;
     font-weight: 500;
-    font-size: 17px;
     
 }
-
 .location-image .child-3 li{
     display: grid;
     grid-template-columns: max-content max-content;
@@ -899,6 +854,7 @@ section{
 
 
 
+
 .location-image .child-4  {
     
     margin-top: 30px;
@@ -910,11 +866,13 @@ section{
 }
 
 .location-image .child-4:hover{
-    background: rgba(237, 51, 55, 0.84);
+    background: #11101c;
     color: white;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
+
 
 
 
@@ -983,11 +941,14 @@ section{
     line-height: 43px;
     border-radius: 20px;
     color: #ed3337;
-    padding: 0 25px;
+    padding: 0 20px;
     width: 120px;
+    height: max-content;
     
 
 }
+
+
 
 .our-service-card-header .child-1 h1 {
 
@@ -1593,6 +1554,13 @@ section{
     font-size: 16px;
 }
 
+.reach-out .reach-out-parent .child-2 form .form-btn:hover{
+    background: #11101c;
+    color: white;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
 
 /* testimonial section */
 .testimonials{
@@ -2085,7 +2053,7 @@ section{
 }
 
 .flip-card-front, .flip-card-back {
-    width: 100%;
+    width: 110%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -2114,7 +2082,7 @@ section{
     grid-template-rows: repeat(4, max-content);
     justify-items: center;
     align-content: center;
-    gap: 15px;
+    gap: 13px;
     padding-inline: 10px;
 }
 
@@ -2126,7 +2094,7 @@ section{
 .about-us .child-1 .flip-card-back .ceo-name{
     color: #000;
     font-family: Raleway;
-    font-size: 17px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
 }
@@ -2240,7 +2208,7 @@ section{
 .about-us .child-2 .advantages {
     width: 100%;
     justify-content: center;
-    padding-left: 30px;
+    padding-left: 0;
     padding-top: 150px;
     gap: 200px;
 }
