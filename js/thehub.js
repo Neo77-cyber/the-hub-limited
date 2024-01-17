@@ -107,10 +107,9 @@ if (window.location.href.split("/")[3] === "about.html") {
 // homepage videos........
 
 video_dictionary = {
-    "Supply Chain":"https://www.youtube.com/embed/Lpp9bHtPAN0",
-    "Shipping Transport":"https://www.youtube.com/embed/oA1VrK0UMJg",
-    "Special Transport":"https://www.youtube.com/watch?v=6EDCnhbUpgE&t=7s",
-    "Country Wide":"https://www.youtube.com/watch?v=HZGy8QBaSG0",
+    "video1":"https://www.youtube.com/embed/Lpp9bHtPAN0",
+    "video2":"https://www.youtube.com/embed/oA1VrK0UMJg",
+    "video3":"https://www.youtube.com/embed/6EDCnhbUpgE",
 }
 if (window.location.href.split("/")[3] === "home.html") {
     let service_video = document.getElementsByClassName("service-video")[0];
@@ -130,7 +129,7 @@ if (window.location.href.split("/")[3] === "home.html") {
             service_video.style.transition = ".2s";
             service_video.style.height = "100vh";
             // setting video link content.....
-            let video_name = video_cards[i].previousElementSibling.innerHTML;
+            let video_name = video_cards[i].children[1].getAttribute("data-videoLink");
             video_data = video_dictionary[video_name]
 
             video_link.children[0].setAttribute("src", video_data)
@@ -182,7 +181,7 @@ if (window.location.href.split("/")[3] === "home.html") {
 
     for (let i = 0; i < faq_qstn.length; i++) {
         faq_qstn[i].addEventListener("click", function(){
-
+            
             if ( faq_qstn[i].children[0].checked === false ) {
                 console.log(faq_qstn[i].children[3])
                 faq_qstn[i].children[3].classList.add("panel-checked");
@@ -201,9 +200,9 @@ if (window.location.href.split("/")[3] === "home.html") {
     function check(inpVar) {
         inpVar.checked = true;
     }
-
+    
     function uncheck(inpVar) {
         inpVar.checked = false;
-    }
+    } 
 }
 

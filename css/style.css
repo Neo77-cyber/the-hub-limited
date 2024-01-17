@@ -1477,7 +1477,7 @@ section{
     /* text-transform: uppercase; */
     border-radius: 7px;
     background: #ed3337;
-    transition: background .5s;
+    transition: background .2s;
     box-shadow: 0 0 80px 1px rgba(0, 0, 0, 0.577);
 }
 
@@ -1485,6 +1485,10 @@ section{
 .reach-out .reach-out-parent .reach-out-icons span:hover{
     background: #11101c;
     cursor: default;
+}
+
+.reach-out .reach-out-parent .reach-out-icons span:hover img{
+    filter: invert();
 }
 
 
