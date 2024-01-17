@@ -41,10 +41,10 @@ if (window.location.href.split("/")[3] === "about.html") {
 
 
     founders_dictionary = {
-        "John Doe":{
-            "image":"img/about.png",
-            "label": "CEO- The Hub",
-            "text": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, venenatis."
+        "Pastor Ituah Ighodaro":{
+            "image":"img/about1.png",
+            "label": "Non-Executive Director(Chairman)",
+            "text": "Ituah Ighodalo is a Corporate Business Leader with an extensive track record in building and sustaining major establishments and institutions. He possesses over 40 years’ experience in Auditing, Accounting, Taxation, Human resources and Financial Advisory Services. Ituah is a fellow of the Institute of Chartered Accountants of Nigeria (ICAN). A Fellow of the Chartered Institute of Taxation Nigeria, a member of the Institute of Management, a member of the American Society of Industrial Security and a member of the American Instituteo f Management. He sits on the board of several corporate, charitable organizations and NGOs, as Chairman and Director. He also Serves as the Senior Pastor,Trinity House."
         },
 
         "Anika Some":{
