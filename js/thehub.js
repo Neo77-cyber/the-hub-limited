@@ -220,9 +220,9 @@ if (window.location.href.split("/")[3] === "about.html") {
 // homepage videos........
 
 video_dictionary = {
-    "video1":"https://www.youtube.com/embed/Lpp9bHtPAN0",
-    "video2":"https://www.youtube.com/embed/oA1VrK0UMJg",
-    "video3":"https://www.youtube.com/embed/6EDCnhbUpgE",
+    "video1":{"local":"videos/thl.mp4"},
+    "video2":{"online":"https://www.youtube.com/embed/oA1VrK0UMJg?rel=0&enablejsapi=1"},
+    "video3":{"online":"https://www.youtube.com/embed/6EDCnhbUpgE?rel=0&enablejsapi=1"},
 }
 if (window.location.href.split("/")[3] === "home.html") {
     let service_video = document.getElementsByClassName("service-video")[0];
@@ -242,10 +242,19 @@ if (window.location.href.split("/")[3] === "home.html") {
             service_video.style.transition = ".2s";
             service_video.style.height = "100vh";
             // setting video link content.....
-            let video_name = video_cards[i].children[1].getAttribute("data-videoLink");
-            video_data = video_dictionary[video_name]
+            let video_name = video_cards[i].children[1].getAttribute("data-videoLink").split("-");
+            video_data = video_dictionary[video_name[0]][video_name[1]]
 
-            video_link.children[0].setAttribute("src", video_data)
+            if (video_name[1] === "online") {
+                video_link.children[0].style.display = "block";
+                video_link.children[1].style.display = "none";
+                video_link.children[0].setAttribute("src", video_data)
+            }else if( video_name[1] === "local" ){
+                video_link.children[0].style.display = "none";
+                video_link.children[1].style.display = "block";
+                video_link.children[1].children[0].setAttribute("src", video_data)
+            }
+            
 
             video_card.style.transform = "translateY(0)";
 
@@ -253,7 +262,19 @@ if (window.location.href.split("/")[3] === "home.html") {
         
     }
 
+    function controlVideo(vidFunc) {
+        let iframe = video_link.children[0].contentWindow;
+        
+        iframe.postMessage(
+            '{"event":"command","func":"' + vidFunc + '","args":""}',
+            "*"
+        );
+        console.log(iframe.postMessage)
+    }
+
     service_video_close.addEventListener("click", function(){
+        controlVideo('pauseVideo');
+        video_link.children[1].pause()
         video_card.style.transitionDelay = 0;
         video_card.style.transform = "translateY(-100vw)";
 

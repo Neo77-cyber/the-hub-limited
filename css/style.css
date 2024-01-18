@@ -1100,41 +1100,19 @@ section{
     
 }
 
-.our-country-services .service-cards .child-1 .card-image{
+.our-country-services .service-cards .card-image{
     display: grid;
     justify-items: center;
     align-items: center;
 }
 
-.our-country-services .service-cards .child-2 .card-image{
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
 
-.our-country-services .service-cards .child-3 .card-image{
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
-
-.our-country-services .service-cards .child-1 span .video_tag{
+.our-country-services .service-cards span .video_tag{
     position: absolute; 
     width: 90px;
     height: 90px;
 }
 
-.our-country-services .service-cards .child-2 span .video_tag{
-    position: absolute; 
-    width: 90px;
-    height: 90px;
-}
-
-.our-country-services .service-cards .child-3 span .video_tag{
-    position: absolute; 
-    width: 90px;
-    height: 90px;
-}
 
 .service-video{
     display: grid;
@@ -1182,15 +1160,20 @@ section{
 
 .service-video .ab-img iframe{
     width: 100%;
-    height: 100%;
+    height: 52vh;
     object-fit: cover;
 }
 
+.service-video .ab-img video{
+    width: 100%;
+    height: 52vh;
+    object-fit: cover;
+}
 
 .our-country-services .service-cards .host-img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 30vh;
+    object-fit: contain;
 }
 
 .our-country-services .service-cards .child-1:hover{
