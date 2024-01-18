@@ -1066,67 +1066,42 @@ input::placeholder {
     /* border: 2px solid green;  */
 }
 
-.our-country-services .service-cards .child-1{
+
+.our-country-services .service-cards div{
     position: relative;
     display: grid;
     grid-template-rows: max-content ;
     justify-items: center;
     gap: 10px;
-    background: rgba(8, 12, 36, 0.1);; 
     box-shadow: 0px 0px 20px 5px rgba(63, 61, 86, 0.05); 
     gap: 10px;
     margin-block: 30px;
     border-radius: 7px;
     padding: 20px;
-    height: max-content;
+    height: 251px;
     transition: .3s;
-    cursor: pointer;
-    /* border: 2px solid blueviolet; */
+    cursor: pointer; 
     
+}
+
+
+.our-country-services .service-cards .child-1{
+    background: rgba(8, 12, 36, 0.1);; 
 }
 
 .our-country-services .service-cards .child-2{
-    position: relative;
-    display: grid;
-    grid-template-rows: max-content ;
-    justify-items: center;
-    gap: 10px;
     background: rgba(0, 133, 239, 0.1);
-    box-shadow: 0px 0px 20px 5px rgba(63, 61, 86, 0.05); 
-    gap: 10px;
-    margin-block: 30px;
-    border-radius: 7px;
-    padding: 20px;
-    height: max-content;
-    transition: .3s;
-    cursor: pointer;
-    /* border: 2px solid blueviolet; */
-    
 }
 
 .our-country-services .service-cards .child-3{
-    position: relative;
-    display: grid;
-    grid-template-rows: max-content ;
-    justify-items: center;
-    gap: 10px;
     background: rgba(250, 67, 24, 0.1); 
-    box-shadow: 0px 0px 20px 5px rgba(63, 61, 86, 0.05); 
-    gap: 10px;
-    margin-block: 30px;
-    border-radius: 7px;
-    padding: 20px;
-    height: max-content;
-    transition: .3s;
-    cursor: pointer;
-    /* border: 2px solid blueviolet; */
-    
 }
 
 .our-country-services .service-cards .card-image{
     display: grid;
     justify-items: center;
     align-items: center;
+    height: 205px;
 }
 
 
