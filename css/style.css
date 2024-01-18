@@ -486,11 +486,12 @@ section{
 
 .track-your-order {
     position: relative;
+    display: grid;
+    align-items: center;
 }
 
 
 .track-your-order input {
-
     width: 325px;
     height: 2.95rem;
     background-color: var(--blue-1);
@@ -501,8 +502,30 @@ section{
     border-radius: 30px;
     
 } 
+.track-your-order button{
+    position: absolute;
+    right: 0px;
+    z-index: 10;
+    width: max-content;
+    height: 95%;
+    padding: 6px 20px;
+    border-radius: 30px;
+    background: #F3F5F6;
+    color: black;
+    font-family: Poppins;
+    transition: .2s;
+    outline: none;
+    border: none;
+}
 
-::placeholder {
+.track-your-order button:hover{
+    background: #000000bc;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 100px 10px #000;
+}
+
+input::placeholder {
     color: #FFF;
     opacity: 1; 
   }
