@@ -193,8 +193,11 @@ if (window.location.href.split("/")[3] === "about.html") {
             founders_description.children[0].innerHTML = ceo_name;
             founders_description.children[1].innerHTML = ceo_data["label"];
             founders_description.children[2].innerHTML = ceo_data["text"];
+            // funtionality for executives without description
             if (founders_description.children[2].innerHTML.length < 5) {
                 founders_description.style.gridTemplateRows = "max-content max-content max-content max-content";
+            }else if(founders_description.children[2].innerHTML.length > 5){
+                founders_description.style.gridTemplateRows = "max-content max-content 268px max-content";
             }
             founders_description.previousElementSibling.children[0].setAttribute("src", ceo_data["image"])
 
