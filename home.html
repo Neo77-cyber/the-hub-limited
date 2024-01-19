@@ -208,7 +208,7 @@
             <div class="location-text">
 
               <div class="child-1">
-                <img class="img-1" src="img/Thl-animation-image-removebg-preview.png" alt="">
+                <img class="img-1" src="img/location-image.jpeg" alt="">
                 <!-- <img class="img-2" src="img/Yellow Modern Gadget Store Logo.jpg" alt=""> -->
                 <!-- <img class="img-3" src="img/shape.png" alt=""> -->
                 <!-- <div class="child-2"> -->
@@ -395,7 +395,7 @@
                   </span>
                 </div>
               </div>
-              <form action="">
+              <form  method="post" id="myForm">
                 <div>
                   <label for="name">Your Name:</label>
                   <input type="text">
@@ -422,6 +422,21 @@
                   <a href="#" class="reach-out-btn form-btn">Submit Request</a>
                 </div>
               </form>
+              <script>
+                function submitForm() {
+                    var name = document.getElementById("name").value;
+                    var email = document.getElementById("email").value;
+                    var phone = document.getElementById("phone").value;
+                    var cartons = document.getElementById("cartons").value;
+                    var message = document.getElementById("message").value;
+                
+                    var mailtoLink = "mailto:Info@thehubng.com?subject=Form Submission&body=" + encodeURIComponent(
+                        "Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\nCartons/week: " + cartons + "\n\nMessage: " + message
+                    );
+                
+                    window.location.href = mailtoLink;
+                }
+                </script>
             </div>
 
           </div>
@@ -535,11 +550,11 @@
           <h1 class="faq-header">Frequently Asked Questions</h1>
 
           <div class="faq-groups">
-            <p class="faq-group-item shipping active-cat">SHIPPING</p>
-            <p class="faq-group-item receiving">RECEIVING</p>
-            <p class="faq-group-item billing">BILLING</p>
-            <p class="faq-group-item tracking">TRACKING</p>
-            <p class="faq-group-item fulfillment">FULFILLMENT</p>
+            <p class="faq-group-item shipping active-cat">Shipping</p>
+            <p class="faq-group-item receiving">Receiving</p>
+            <p class="faq-group-item billing">Billing</p>
+            <p class="faq-group-item tracking">Tracking</p>
+            <p class="faq-group-item fulfillment">Fulfilment</p>
           </div>
 
           <div style="position: relative;">
