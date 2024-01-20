@@ -333,15 +333,7 @@ body{
 
 }
 
-
-
-
-
-@media only screen and (max-width: 1350px) {
-    .main_nav{
-        width: 88vw;
-    }
-    
+@media only screen and (max-width: 1350px) {    
     .main_nav .login-btn{
         width: max-content;
     }
@@ -350,19 +342,76 @@ body{
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1205px) {
+    .main_nav {
+        gap: 10px;
+        padding: 0 40px;
+        grid-template-columns: repeat(6, max-content);
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 940px) {
+    .main_nav {
+        padding: 0 80px;
+        gap: 15px;
+    }
+
+    .main_nav .logo .logo-text{
+        display: none;
+    }
+
     .main_nav .nav-links{
         font-size: 17px;
     }
 }
 
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 870px) {
+
     .main_nav {
-        display: none;
+        gap: 5px;
+    }
+
+    .main_nav .nav-links{
+        font-size: 14px;
+    }
+
+    .main_nav .logo img{
+        width: 40px;
+        height: 40px;
     }
 }
 
+
+
+@media only screen and (max-width: 750px) {
+    .main_nav .nav-links,
+    .login-btn{
+        display: none;
+    }
+
+    .main_nav .responsive-menu{
+        display: grid;
+        z-index: 100;
+        right: 30px;
+    }
+
+    .main_nav .logo{
+        position: absolute;
+        left: 30px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    html, html body{
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        overflow-x: hidden;
+    }
+}
 /* sections start here... */
 
 .all-sections{
@@ -2786,10 +2835,6 @@ input::placeholder {
 
 /* solutions page */
 
-/* services page */
-
-
-/* solutions page */
 
 
 .solutions-page{
@@ -2874,13 +2919,6 @@ input::placeholder {
 
 .solutions-page .sol5{
     background-image: url("../img/close-up-man-sitting-table.jpg") !important;
-     
-     
-     
-     
-     
-     
-
 
 }
 
@@ -2979,6 +3017,132 @@ input::placeholder {
 .solutions-page .profile-text div strong{
     font-weight: 1000;
     color: #ed3337;
+}
+
+/* solution responsive */
+
+@media only screen and (max-width: 1100px) {    
+    .service-cards .icon-1 {
+        width: 50px;
+        height: 65px;
+    }
+    .service-cards .text-wrapper{
+        font-size: 15px;
+    }
+
+    .service-cards p{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {    
+    .solutions-page .child-1{
+        width: 100vw;
+        background-size: cover;
+    }
+    
+}
+
+@media only screen and (max-width: 870px) {    
+    .solutions-page .homepage-services{
+        width: 95vw;
+    }
+}
+
+@media only screen and (max-width: 805px) {    
+    .solutions-page .child-1 .sol-text{
+        left: 0;
+        top: 0;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 750px) {    
+    .service-cards .icon-1 {
+        width: 35px;
+        height: 50px;
+    }
+    .service-cards .text-wrapper{
+        font-size: 13px;
+    }
+
+    .service-cards p{
+        font-size: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 670px) {    
+
+    .solutions-page .service-cards, 
+    .homepage-services .service-cards{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .service-cards p{
+        text-align: center;
+    }
+
+    .solutions-page .profile-text {
+        padding: 20px 30px;
+    }
+}
+
+@media only screen and (max-width: 595px) {    
+    .solutions-page .child-1 .sol-text{
+        height: 220px;
+        width: 400px;
+        align-content: center;
+    }
+
+    .solutions-page .profile-text h1{
+        font-size: 20px;
+    }
+
+    .solutions-page .profile-text div{
+        font-size: 12px;
+    }
+
+    .solutions-page .profile-text h2{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 450px) {   
+    .solutions-page .child-1{
+        height: 50vh;
+    }
+
+    .solutions-page .child-1 .sol-text{
+        height: 200px;
+        width: 340px;
+        align-content: center;
+        padding: 0;
+        padding-left: 20px;
+    }
+
+    .solutions-page .child-1 .sol-text h1, .solutions-page .child-1 .sol-text h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 370px) {    
+    .solutions-page .child-1 .sol-text{
+        height: 180px;
+        width: 300px;
+        align-content: center;
+        padding: 0;
+        padding-left: 20px;
+    }
+
+    .solutions-page .child-1 .sol-text h1, .solutions-page .child-1 .sol-text h2 {
+        font-size: 17px;
+        margin-block: 3px;
+    }
+
+    .solutions-page .child-1 .sol-text-link a {
+        font-size: 13px;
+    }
 }
 
 /* ................. */
