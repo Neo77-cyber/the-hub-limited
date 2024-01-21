@@ -5,7 +5,7 @@ let bg_style = document.getElementsByClassName("styler-bg");
 for ( let i = 0; i < nav_links.length; i++ ) {
 
     nav_links[i].addEventListener( "mouseover", function() {
-        console.log("abc")
+        
         add_bg(bg_style[i])
     });
     
@@ -31,7 +31,7 @@ function add_bg(i){
 function remove_bg(i){
     i.classList.remove("bg-nav")
     i.classList.add("bg-nav-out")
-    console.log(i.classList)
+    
 }
 
 // about us card func 
