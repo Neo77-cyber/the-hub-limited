@@ -73,6 +73,57 @@
             <span class="styler-bg"></span>About Us
         </a>
         <a class="login-btn" href="login.html">Login | Register</a>
+
+        <div id="myNav" class="overlay">
+
+          <!-- Button to close the overlay navigation -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+          <!-- Overlay content -->
+          <div class="overlay-content">
+
+              <a href="home.html">Home</a>
+              
+              <a href="about.html">About Us</a>
+
+              <a class="overlay-solution">Solution +</a>
+              <div class="overlay-sol-menu ">
+                <a href="solution.html">Order Fullfilment &amp; Inventory Management</a>
+                <a href="solution-2.html">global product distribution</a>
+                <a href="solution-3.html">flexible storage</a>
+                <a href="solution-4.html">consolidation</a>
+                <a href="solution-5.html">consulting</a>
+              </div>
+              
+              <a href="register.html">Register</a>
+              
+              <a href="login.html">Login</a>
+
+          </div>
+
+      </div>
+              
+      <span class="menu hide" onclick="openNav()">&#9776; </span>
+      
+      
+      <script>
+          function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+          }
+
+          function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+          }
+          let overlaysolmenu = document.getElementsByClassName("overlay-sol-menu")[0];
+          document.getElementsByClassName("overlay-solution")[0].addEventListener("click", function(){
+            if ( overlaysolmenu.classList.contains("active-overlaysolmenu") ) {
+              overlaysolmenu.classList.remove("active-overlaysolmenu");
+            } else {
+              overlaysolmenu.classList.add("active-overlaysolmenu");
+            }
+            
+          })
+      </script>
     </div>
 </header>
 
@@ -222,46 +273,40 @@
 
               
 
-              <!-- <h1>Worldwide fulfillment Made Easy</h1>
-              <h4>Are you ready to save time and money on order Fullfilment</h4>
-              <h6>Fast, <span> Secure,</span> Reliable & <span>Efficient</span></h6> -->
-
             </div>
             <div class="location-image">
-              <!-- <img src="img/world-map.png" alt="" > -->
               <div class="child-1">
-                <h4>Why Us</h4>
-                <h1>Welcome To The Hub 
-                  Terminus Limited
-                </h1>
+                <div>
+                  <h1>Welcome To The Hub Terminus Limited</h1>
+                  <h4>Why Us</h4>
+                </div>
                 <h6>
-                  <!-- We fulfil and distribute Pan Nigeria and Internationally<br>while you grow your business -->
 
                   Seamless Fulfilment, Smarter Logistics, Empower Businesses<br>Discover the THL Advantage 
                 </h6>
-                <div class="child-2">
-                  <ul class="child-3">
-                    <li>Flexibility</li>
-                    <li>Optimize your operations</li>
-                    <li>Delight your customers</li>
-                    <li>Seamlessly handle orders</li>
-                    <li>Improve your stock control </li>
-                  </ul>
-
-                  <!-- <img src="img/ship-image.png" alt="" > -->
-
-                  <ul class="child-6">
-                    <li>Focus on your revenue drive</li>
-                    <li>Deliver better experience </li>
-                    <li>Safety</li>
-                    <li>Customer collection options</li>
-                    <li>Activity-based charging </li>
-                  </ul>
-
-
-                </div>
-                <!-- <a href="">About Us</a> -->
                 
+                
+              </div>
+              <div class="child-2">
+                <ul class="child-3">
+                  <li>Flexibility</li>
+                  <li>Optimize your operations</li>
+                  <li>Delight your customers</li>
+                  <li>Seamlessly handle orders</li>
+                  <li>Improve your stock control </li>
+                </ul>
+
+                <!-- <img src="img/ship-image.png" alt="" > -->
+
+                <ul class="child-6">
+                  <li>Focus on your revenue drive</li>
+                  <li>Deliver better experience </li>
+                  <li>Safety</li>
+                  <li>Customer collection options</li>
+                  <li>Activity-based charging </li>
+                </ul>
+
+
               </div>
               <div class=" child-4">
 

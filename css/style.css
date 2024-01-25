@@ -332,8 +332,85 @@ body{
     color: #ffffff;
 
 }
+
+
+.hide{
+    display: none;
+}
+
+
+.menu{
+    position:absolute; 
+    top: 0; 
+    left: 95vw; 
+    font-size:35px;
+    cursor:pointer;
+    color:white;
+}
+
+/* The Overlay (background) */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1000000; 
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden;
+    transition: 0.5s; 
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; 
+  transition: 0.3s; 
+}
+
+.overlay-sol-menu{
+    display: grid;
+    grid-template-rows: repeat(5, max-content);
+    height: 0;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.active-overlaysolmenu{
+    height: 140px;
+}
+
+.overlay-sol-menu a{
+    font-size: 16px;
+    padding: 2px;
+    color: #ed3337;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
 @media only screen and (max-width: 1430px) {
-    html, html body{
+    html, body{
         width: 100% !important;
         min-width: 0 !important;
         max-width: none !important;
@@ -389,6 +466,17 @@ body{
     .main_nav .logo img{
         width: 65px;
         height: 65px;
+    }
+
+    .menu{
+        display: block;
+        left: 83vw;
+        opacity: 1 !important;
+        top: 15px;
+    }
+
+    .overlay{
+        font-family: Poppins;
     }
 }
 
@@ -590,24 +678,7 @@ input::placeholder {
     opacity: 1; 
   }
 
-/* homepage responsiveness */
-@media only screen and (max-width: 1200px) {
-    .swiper{
-        width: 100vw;
-    }
-    .track-order-container{
-        bottom: 40px;
-    }
-}
 
-@media only screen and (max-width: 1200px) {
-    .swiper-slide .slider-text h1{
-        font-size: 23px;
-    }
-    .swiper-slide .slider-text h3{
-        font-size: 13px;
-    }
-}
 
 
 /* sections global */
@@ -642,8 +713,8 @@ input::placeholder {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin: 10px 190px;
-    /* border: 2px solid green; */
+    width: 80vw;
+    justify-self: center;
 }
 
 .homepage-services .service-cards div{
@@ -1033,6 +1104,7 @@ input::placeholder {
     gap: 0px;
     border-radius: 50px;
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.05); 
+    padding-top: 30px;
     /* border: 2px solid orange; */
 }
 
@@ -1044,22 +1116,19 @@ input::placeholder {
     height: max-content;
     margin-top: 40px;
     margin-bottom: 3px;
-    /* border: 2px solid black; */
+    padding-inline: 50px;
 }
 
 
 .our-service-card-header .child-1 {
-    
     display: grid;
     grid-template-rows: auto auto;
-    /* gap: 0.5px; */
-    /* border: 2px solid red; */
+    align-content: center;
     
 }
 
 .our-service-card-header .child-1 h4 {
     border: 2px solid #ed3337;
-    margin: 70px 50px 0 ;
     font-size: 24px;
     font-weight: 600;
     line-height: 43px;
@@ -1088,12 +1157,13 @@ input::placeholder {
 
 
 .our-service-card-header p {
+    display: grid;
+    align-items: center;
     border-left: 5px solid red;
     padding: 2px 50px;
-    line-height: 1.7;
+    line-height: 20px;
     font-size: 17px;
     height: 80px;
-    margin-top: 60px;
 
 }
 
@@ -1402,7 +1472,7 @@ input::placeholder {
 .reach-out .reach-out-parent h1{
     
     font-weight: 900;
-    color: #fff;
+    color: #000000;
     font-size: 35px;
     text-align: center;
     padding: 0 45px 0;
@@ -1979,6 +2049,363 @@ input::placeholder {
 
 .faq-section .panel {
     display: none;
+}
+
+/* homepage responsiveness */
+@media only screen and (max-width: 1200px) {
+    .swiper{
+        width: 100vw;
+    }
+    .track-order-container{
+        bottom: 40px;
+    }
+
+    .location-container{
+        grid-template-columns: 1fr;
+        margin-left: 80px;
+    }
+
+    .location-container .location-text{
+        display: none;
+    }
+
+    .location-image{
+        gap: 10px;
+    }
+
+    .location-image .child-1{
+        grid-template-columns: max-content 1fr;
+        gap: 20px;
+    }
+
+    .location-image .child-1 div{
+        display: grid;
+        gap: 15px;
+    }
+
+    .location-image .child-1 h6{
+        margin: 0;
+    }
+
+    .location-image .child-4{
+        display: grid;
+        place-content: center;
+        margin-top: 20px;
+    }
+
+    .our-service-card-header{
+        margin: 0;
+    }
+
+    .reach-out .reach-out-parent .child-2{
+        grid-template-columns: 55vw 1fr;
+    }
+
+    .reach-out .reach-out-parent .child-2 form div:nth-child(2),
+    .reach-out .reach-out-parent .child-2 form div:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    .reach-out .reach-out-parent .reach-out-icons span{
+        padding: 6px 8px;
+    }
+
+    .reach-out .reach-out-parent .reach-out-icons span img{
+        width: 30px;
+        height: 30px;
+    }
+    .faq-section .faq-groups{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .location-container{
+        margin: 0;
+        justify-items: center;
+
+    }
+    .location-image .child-1{
+        grid-template-columns: 1fr;
+    }
+
+    .our-service-cards-container{
+        width: 90vw;
+        margin: auto;
+    }
+    
+    .our-service-card-header{
+        gap: 40px;
+        width: 100%;
+    }
+
+    .our-service-card-header p{
+        height: max-content;
+        padding: 2px 20px;
+    }
+
+    .our-country-services .service-cards div{
+        height: max-content;
+    }
+
+    .our-country-services .service-cards span .video_tag{
+        width: 50px;
+        height: 50px;
+    }
+
+    .our-country-services .service-cards .host-img{
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .reach-out .reach-out-parent .child-2{
+        grid-template-columns: 1fr;
+    }
+    .reach-out .reach-out-parent .reach-out-icons{
+        width: 50vw;
+    }
+
+    .reach-out .reach-out-parent h4{
+        margin-left: 0;
+        justify-self: center;
+    }
+
+    .reach-out .reach-out-parent .child-2{
+        gap: 20px;
+    }
+
+    .reach-out .reach-out-parent .child-2 form{
+        padding-left: 50px;
+    }
+
+    .swiper-slide-testimonial h1{
+        font-size: 14px;
+    }
+    .swiper-slide-testimonial p{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+
+    .swiper-slide-testimonial h1{
+        font-size: 10px;
+    }
+    .swiper-slide-testimonial p{
+        font-size: 10px;
+    }
+
+    .swiper-slide-testimonial .test-card-footer span:nth-child(2){
+        font-size: 13px;
+    }
+
+    .swiper-slide-testimonial .test-card-footer span:nth-child(2) img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .swiper-slide-testimonial{
+        width: 330px;
+    }
+
+    .faq-section .faq-groups{
+        width: 75%;
+    }
+
+    .faq-section .faq-groups p{
+        font-size: 12px;
+        width: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .our-country-services .service-cards .card-image{
+        height: 165px;
+    }
+
+    .testimonials .testimonials-header .Quote-icon{
+        width: 25px;
+        height: 35px;
+    }
+
+    .testimonials .testimonials-header h5{
+        font-size: 20px;
+    }
+
+    .testimonials .testimonials-header h1{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .homepage-services .service-cards{
+        justify-items: center;
+    }
+
+    .homepage-services .service-cards div{
+        width: 100%;
+    }
+
+    .location-image .child-2{
+        gap: 10px;
+    }
+    .our-country-services .service-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reach-out{
+        margin-bottom: 80px;
+    }
+
+    .faq-section .panel-title{
+        font-size: 15px;
+    }
+
+    .faq-section .plus{
+        margin-left: 32px;
+        font-size: 12px;
+    }
+
+    .faq-section .faq-groups {
+        grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+    }
+
+    .faq-section .faq-groups p{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 555px) {
+    .swiper-slide .slider-text h1{
+        font-size: 23px;
+    }
+    .swiper-slide .slider-text h3{
+        font-size: 13px;
+    }
+
+    .location-image{
+        width: 90vw;
+    }
+
+    .location-container .child-2{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .our-country-services .service-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .our-country-services .service-cards .card-image{
+        overflow: hidden;
+    }
+
+    .our-service-card-header{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .reach-out{
+        padding-inline: 50px;
+    }
+
+    .reach-out .reach-out-parent .child-2 .sect-1,
+    .reach-out .reach-out-parent .child-2 form{
+        width: 90%;
+        justify-self: center;
+    }
+
+    .reach-out .reach-out-parent .child-2 form{
+        padding-left: 0;
+    }
+
+    .reach-out .reach-out-parent .child-2 .sect-1{
+        gap: 22px;
+    }
+
+    .reach-out .reach-out-parent .reach-out-icons{
+        width: max-content;
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials .testimonials-header h5{
+        font-size: 15px;
+    }
+
+    .testimonials .testimonials-header h1{
+        font-size: 15px;
+    }
+
+    .testimonials .testimonials-header{
+        gap: 3px;
+    }
+
+    .reach-out{
+        margin-bottom: 20px;
+    }
+
+    .swiper-testimonial{
+        height: max-content;
+    }
+    .testimonials{
+        grid-template-rows: max-content max-content max-content;
+        gap: 40px;
+        margin-top: 20px;
+        min-height: 45vh;
+    }
+    .swiper-testimonial .swiper-wrapper{
+        height: max-content;
+    }
+
+    .faq-section .faq-groups{
+        width: 70%;
+    }
+
+    .faq-section .faq-content{
+        padding-inline: 20px;
+    }
+
+    .faq-section .faq-header{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .overlay-sol-menu a{
+        font-size: 14px;
+    }    
+    .overlay a{
+        font-size: 27px;
+    }
+    
+    .our-service-card-header,
+    .our-country-services .service-cards{
+        padding-inline: 10px;
+    }
+    .our-country-services .service-cards div{
+        margin: 0;
+    }
+
+    .reach-out .reach-out-parent h1{
+        font-size: 25px;
+    }
+
+    
+
+    .reach-out .reach-out-parent .child-2 form .form-btn{
+        font-size: 14px;
+        padding: 2px 10px;
+    }
+
+    .faq-section .faq-content{
+        padding-left: 50px;
+    }
+
+
 }
 
 
