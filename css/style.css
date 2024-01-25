@@ -2817,7 +2817,6 @@ input::placeholder {
     font-style: normal;
     font-weight: 400;
     border-radius: 25px;
-    height: 100%;
     width: 100%;
 }
 
