@@ -2237,6 +2237,7 @@ input::placeholder {
     .testimonials .testimonials-header h1{
         font-size: 20px;
     }
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -3258,7 +3259,9 @@ input::placeholder {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 0.3px;
+    letter-spacing: 2px;
+    font-weight: 700;
+
 }
 
 .login-page .login-inputs input{
@@ -3271,6 +3274,9 @@ input::placeholder {
     border: none;
     background: #46455831;
     border-radius: 6px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 700;
 }
 
 .login-page button{
@@ -3366,6 +3372,78 @@ input::placeholder {
     border-radius: 50%;
 }
 
+
+@media only screen and (max-width: 850px) {
+    .login-page{
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    .login-page .child-1{
+        position: absolute;
+        border-radius: 15px;
+        filter: brightness(.6) blur(5px);
+        z-index: -1;
+    }
+
+    .login-page .child-2{
+        width: 90vw;
+        color: #ffffff;
+        padding-left: 50px;
+    }
+
+    .login-page .child-2 h1{
+        font-family: Poppins;
+        text-shadow: 0 0 10px white;
+    }
+
+    .login-page .login-inputs label{
+        color: #bb9f9f;
+    }
+
+    .login-page .login-inputs input{
+        background: #46455875;
+    }
+
+    .login-page .login-register-btn a{
+        color: #fff;
+    }
+
+    .login-radio div:nth-child(2){
+        display: grid;
+        align-items: center;
+    }
+
+    .login-radio div:nth-child(2) a{
+        color: #ffffff;
+        text-shadow: 0 0 7px rgb(160, 18, 18);
+    }
+
+
+}
+
+
+@media only screen and (max-width: 550px){
+    .login-page{
+        margin-top: 45px;
+        margin-bottom: 0px;
+    }
+
+    .login-page .child-2 {
+        width: 115vw;
+        padding-left: 23px;
+    }
+
+    .register-page .child-1 {
+        height: 95vh !important;
+        margin-top: 81px;
+    }
+
+    .login-page .child-1 {
+        height: 75vh;
+        margin-top: 81px;
+    }
+}
 
 /* services page */
 

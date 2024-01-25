@@ -218,7 +218,23 @@ if (window.location.href.split("/")[3] === "about.html") {
 
 }
 
+// nav function..........
 
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+let overlaysolmenu = document.getElementsByClassName("overlay-sol-menu")[0];
+document.getElementsByClassName("overlay-solution")[0].addEventListener("click", function(){
+    if ( overlaysolmenu.classList.contains("active-overlaysolmenu") ) {
+        overlaysolmenu.classList.remove("active-overlaysolmenu");
+    } else {
+        overlaysolmenu.classList.add("active-overlaysolmenu");
+    }
+})
 
 // homepage videos........
 
@@ -228,6 +244,7 @@ video_dictionary = {
     "video3":{"online":"https://www.youtube.com/embed/6EDCnhbUpgE?rel=0&enablejsapi=1"},
 }
 if (window.location.href.split("/")[3] === "home.html") {
+
     let service_video = document.getElementsByClassName("service-video")[0];
 
     let video_cards = document.getElementsByClassName("card-image");
